@@ -1,0 +1,50 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		escreva("CALCULADORA DE IMC\n")
+		escreva("\n")
+		
+		real imc, altura, pesokg
+
+		escreva("Qual sua altura em metro? ")
+		leia(altura)
+		
+		escreva("Qual seu peso em kg? ")
+		leia(pesokg)
+		escreva("\n")
+
+	     imc = pesokg / (altura * altura)
+	     escreva("Seu IMC É: ", imc, "\n")
+	     
+
+	     se (imc < 15) {
+	     	escreva("Extremamente abaixo do peso")
+	     }
+	     se  (15 <= imc e imc < 16 ) {
+	     	escreva("Gravemente abaixo do peso")
+	     }
+	     se (16 <= imc e imc < 18.5) {
+	     	escreva("Abaixo o peso ideal")
+	     }
+	     se (18.5 <= imc e imc < 25) {
+	     	escreva("Faixa de peso ideal")
+	     }
+	     se (25 <= imc e imc < 30) {
+	     	escreva("Sobrepeso")
+	     }
+	     se (30 <= imc e imc < 35) {
+	     	escreva("Obesidade grau I")
+	     }
+	     se (35 <= imc e imc < 40) {
+	     	escreva("Obesidade grau II(Grave)")
+	     }
+	     se (imc > 40) { 
+	     	escreva("Obesidade grau III(Mórbida)")
+	     }
+	          escreva("\n")
+
+		
+	}
+}
